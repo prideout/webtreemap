@@ -100,7 +100,7 @@ function makeDom(tree, level) {
   caption.className = 'webtreemap-caption';
   caption.innerHTML = tree.name;
   dom.appendChild(caption);
-  dom.title = tree.name;
+  dom.title = tree.detail || tree.name;
 
   tree.dom = dom;
   return dom;
